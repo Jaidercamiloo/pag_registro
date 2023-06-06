@@ -1,0 +1,23 @@
+<dl class="person-details">
+  <dt>Tipo de identificación</dt>
+  <dd><%= @person.document.tipo_documento %></dd>
+  <dt>Identificación</dt>
+  <dd><%= @person.identificacion %></dd>
+  <dt>Primer nombre</dt>
+  <dd><%= @person.primer_nombre %></dd>
+  <dt>Segundo nombre</dt>
+  <dd><%= @person.segundo_nombre %></dd>
+  <dt>Primer apellido</dt>
+  <dd><%= @person.primer_apellido %></dd>
+  <dt>Segundo apellido</dt>
+  <dd><%= @person.segundo_apellido %></dd>
+  <dt>Tipo</dt>
+  <dd><%= @person.role.tipo_role %></dd>
+</dl>
+
+<div class="button-container">
+  <a href="<%= edit_person_path %>" class="btn btn-primary active">Editar</a>
+  <a href="<%= people_path %>" class="btn btn-secondary">Volver</a>
+</div>
+
+
